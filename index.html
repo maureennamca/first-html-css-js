@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attack on Titan Fan Site</title>
+    <link rel="stylesheet" href="assets/css/global.css">
+</head>
+<body>
+    <div class="app-container">
+        <!-- Header -->
+        <header class="header">
+            <div class="container">
+                <div class="header-content">
+                    <div class="logo-section">
+                        <h1 class="site-title">Attack on Titan</h1>
+                        <span class="japanese-title">進撃の巨人</span>
+                    </div>
+                    
+                    <nav class="navigation">
+                        <button id="nav-home" class="nav-button active">Home</button>
+                        <button id="nav-login" class="nav-button">Login</button>
+                        <button id="nav-gallery" class="nav-button hidden">Gallery</button>
+                        <button id="nav-logout" class="nav-button hidden">Logout</button>
+                        <button id="nav-about" class="nav-button">About</button>
+                    </nav>
+                </div>
+            </div>
+        </header>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <!-- Homepage -->
+            <div id="page-home" class="page active">
+                <div class="hero-section">
+                    <div class="container">
+                        <div class="hero-content">
+                            <h2 class="hero-title">Welcome to the World of Attack on Titan</h2>
+                            <p class="hero-description">
+                                Dive into the epic story of humanity's fight for survival against the Titans. 
+                                Join the Survey Corps and discover the secrets beyond the walls.
+                            </p>
+                            <button id="hero-cta" class="cta-button">Join the Survey Corps</button>
+                        </div>
+                        <div class="hero-image">
+                           
+                        </div>
+                    </div>
+                </div>
+
+                <div class="features-section">
+                    <div class="container">
+                        <div class="features-grid">
+                            <div class="feature-card">
+                                <img src="assets/images/Walls.png" alt="The Walls" class="feature-img">
+                                <h3>The Three Walls</h3>
+                                <p>Discover the massive walls that protect humanity from the Titans.</p>
+                            </div>
+                            <div class="feature-card">
+                                <img src="assets/images/SurveyCorps.jpg" alt="Survey Corps" class="feature-img">
+                                <h3>Survey Corps</h3>
+                                <p>Join the elite soldiers who venture beyond the walls.</p>
+                            </div>
+                            <div class="feature-card">
+                                <img src="assets/images/EpicCharacters.jpg" alt="Characters" class="feature-img">
+                                <h3>Epic Characters</h3>
+                                <p>Meet the heroes fighting for humanity's freedom.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Login Page -->
+            <div id="page-login" class="page">
+                <div class="login-container">
+                    <div class="login-card">
+                        <div class="login-header">
+                            <img src="assets/images/SurveyCorps.jpg" alt="Login" class="login-avatar">
+                            <h2>Survey Corps Login</h2>
+                            <p>Access restricted to authorized personnel only</p>
+                        </div>
+                        
+                        <form id="login-form" class="login-form">
+                            <div class="form-group">
+                                <label for="username">Username</label>
+                                <input type="text" id="username" name="username" placeholder="Enter your username" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="password">Password</label>
+                                <input type="password" id="password" name="password" placeholder="Enter your password" required>
+                            </div>
+
+                            <button type="submit" class="login-button">Login</button>
+                        </form>
+
+                        <div class="demo-credentials">
+                            <p><strong>Demo Credentials:</strong><br>
+                            Username: admin<br>
+                            Password: 1234</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- About Page -->
+            <div id="page-about" class="page">
+                <div class="about-container">
+                    <div class="about-hero">
+                        <img src="assets/images/About.jpg" alt="About" class="about-hero-img">
+                        <div class="about-content">
+                            <h2>About Attack on Titan</h2>
+                            <p>Attack on Titan is a Japanese manga series written and illustrated by Hajime Isayama. The story follows humanity's struggle for survival against giant humanoid creatures known as Titans.</p>
+                        </div>
+                    </div>
+
+                    <div class="about-details">
+                        <div class="about-section">
+                            <h3>The Story</h3>
+                            <p>Set in a world where humanity is forced to live behind enormous walls to protect themselves from Titans, the series follows Eren Yeager and his friends as they join the military to fight against these mysterious creatures.</p>
+                        </div>
+
+                        <div class="about-section">
+                            <h3>The World</h3>
+                            <p>The story takes place in a medieval-like world where humanity has built three concentric walls: Wall Maria, Wall Rose, and Wall Sheena, to protect themselves from the Titans that roam outside.</p>
+                        </div>
+
+                        <div class="about-section">
+                            <h3>The Characters</h3>
+                            <p>Follow the journey of Eren Yeager, Mikasa Ackerman, and Armin Arlert as they uncover the truth about the Titans and fight for humanity's freedom.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Gallery Page -->
+            <div id="page-gallery" class="page">
+                <div class="gallery-container">
+                    <div class="gallery-header">
+                        <div class="gallery-title">
+                            <h2>Attack on Titan Gallery</h2>
+                            <p>Exclusive collection for Survey Corps members</p>
+                        </div>
+                        <button id="gallery-logout" class="logout-button">
+                            <svg width="16" height="16" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 16l4-4m0 0l-4-4m4 4H7m6 4v1a3 3 0 01-3 3H6a3 3 0 01-3-3V7a3 3 0 013-3h4a3 3 0 013 3v1"/>
+                            </svg>
+                            Logout
+                        </button>
+                    </div>
+
+                    <div class="welcome-message">
+                        <h3>Welcome, Survey Corps Member!</h3>
+                        <p>You have successfully accessed the exclusive Attack on Titan gallery. Browse through epic scenes and characters from the series.</p>
+                    </div>
+
+                    <div class="gallery-grid">
+                        <div class="gallery-item">
+                            <img src="assets/images/MainArt.jpg" alt="Attack on Titan Main Art">
+                            <div class="gallery-info">
+                                <h4>Attack on Titan Main Art</h4>
+                                <p>Epic battle scene featuring the Survey Corps</p>
+                            </div>
+                        </div>
+
+                        <div class="gallery-item">
+                            <img src="assets/images/Walls.png" alt="The Great Walls">
+                            <div class="gallery-info">
+                                <h4>The Great Walls</h4>
+                                <p>The massive walls protecting humanity</p>
+                            </div>
+                        </div>
+
+                        <div class="gallery-item">
+                            <img src="assets/images/Stance.jpg" alt="Warrior's Stance">
+                            <div class="gallery-info">
+                                <h4>Warrior's Stance</h4>
+                                <p>Ready for battle against the titans</p>
+                            </div>
+                        </div>
+
+                        <div class="gallery-item">
+                            <img src="assets/images/Titans.jpg" alt="Titan Warrior">
+                            <div class="gallery-info">
+                                <h4>Titan Warrior</h4>
+                                <p>The power of the titan shifters</p>
+                            </div>
+                        </div>
+
+                        <div class="gallery-item">
+                            <img src="assets/images/Uniform.jpg" alt="Medieval Armor">
+                            <div class="gallery-info">
+                                <h4>Medieval Armor</h4>
+                                <p>The gear of the Survey Corps</p>
+                            </div>
+                        </div>
+
+                        <div class="gallery-item">
+                            <img src="assets/images/Battle.jpg" alt="Battle Scene">
+                            <div class="gallery-info">
+                                <h4>Battle Scene</h4>
+                                <p>Intense combat against the titans</p>
+                            </div>
+                        </div>
+
+                        <div class="gallery-item">
+                            <img src="assets/images/Walls2.jpg" alt="Fortress Walls">
+                            <div class="gallery-info">
+                                <h4>Fortress Walls</h4>
+                                <p>The imposing defenses of humanity's last stronghold</p>
+                            </div>
+                        </div>
+
+                        <div class="gallery-item">
+                            <img src="assets/images/Pfp.jpg" alt="Character Portrait">
+                            <div class="gallery-info">
+                                <h4>Character Portrait</h4>
+                                <p>Heroes of the Survey Corps</p>
+                            </div>
+                        </div>
+
+                        <div class="gallery-item">
+                            <img src="assets/images/Action.jpg" alt="Action Scene">
+                            <div class="gallery-info">
+                                <h4>Action Scene</h4>
+                                <p>Dynamic movement and ODM gear in action</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="gallery-stats">
+                        <div class="stat-card">
+                            <h4>9</h4>
+                            <p>Total Images</p>
+                        </div>
+                        <div class="stat-card">
+                            <h4>4</h4>
+                            <p>Seasons</p>
+                        </div>
+                        <div class="stat-card">
+                            <h4>87</h4>
+                            <p>Episodes</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="container">
+                <div class="footer-content">
+                    <p class="copyright">© 2025 Attack on Titan Fan Site. All rights reserved.</p>
+                    <p class="attribution">Attack on Titan © Hajime Isayama, Kodansha / MAPPA</p>
+                    <p class="creator">Created by Maureen Namca</p>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
